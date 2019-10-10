@@ -1,0 +1,307 @@
+/* CSS Document */
+
+@font-face{
+	font-family: 'Open Sans';
+	src: url("OpenSans-Regular.ttf") format('truetype');
+}
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	width: 100%;
+}
+#main{
+	width: 80%;
+	height: 80%;
+	position: relative;
+	background-image: url("Background.jpg");
+	background-position: center;
+	background-size: cover;
+	z-index: 1;
+}
+
+#blur{
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	background-image: url("Blur - Background.jpg");
+	background-position: center;
+	background-size: cover;
+	filter: blur(20px);
+	z-index: -1;
+}
+
+#leftDiv {
+	height: 100%;
+	position: absolute;
+	left: 0;
+	background-color: rgba(0,0,0,0.5);
+}
+
+#navigationDiv{
+	height: 20%;
+	position: absolute;
+	right: 0px;
+}
+
+#navigationDiv nav {
+
+}
+
+#navigationDiv nav a{
+	font-family: 'Open Sans';
+	font-size: 0.6em;
+	color: rgba(255,255,255,1.00);
+	transition: 0.5s;
+	cursor: pointer;
+	
+}
+
+#navigationDiv nav a:hover, #navigationDiv nav a:focus{
+	border-radius: 20%;
+	border-bottom: 2px solid white;
+	
+}
+
+/*Assignments navigation*/
+
+
+#leftDiv div {
+	width: 150%;
+	height: 70%;
+	overflow-y: auto;
+	position: relative;
+	top: 15%;
+}
+
+#leftDiv div::-webkit-scrollbar{
+	display: none;
+}
+
+
+#leftDiv ul li {
+	color: white;
+	list-style-type: none;
+	font-family: 'Open Sans';
+	font-size: 0.7em;
+	transition: 0.2s;
+}
+
+#leftDiv ul li:first-of-type img, #leftDiv ul li:last-of-type img{
+	width: 6%;
+}
+
+#leftDiv ul li:first-of-type p, #leftDiv ul li:last-of-type p {
+	font-size: 0.6em;
+}
+
+#leftDiv ul li:hover{
+	background: linear-gradient(to right,transparent 10%, rgb(0,0,0,0.4) 60%, transparent 70% , rgb(255,255,255,0.2) 80% , transparent 90%  );
+	width: 100%;
+	font-size: 0.9em;
+}
+
+#leftDiv ul li a {
+	text-decoration: none;
+	color: white;
+	font-size: 0.7em;
+	border-bottom: 2px solid rgb(255,255,255,0.5);
+}
+
+#leftDiv ul li a:hover{
+	border-bottom: 2px solid rgb(255,255,255,1);
+}
+
+#leftDiv ul li p {
+	font-size: 0.5em;
+}
+
+
+/*Profile Tab*/
+
+#profileTab {
+	
+	height: 80%;
+	position: absolute;
+	right: 5%;
+}
+#firstName{
+	color: white;
+	font-family: Arial;
+	font-size: 1em;
+	margin-top: 20%;
+}
+
+#lastName{
+	color: white;
+	font-family: Arial;
+	font-size: 3em;
+	letter-spacing: -0.05em;
+}
+
+#searchBox {
+	border-bottom: 3px solid white;
+	position: absolute;
+	right: 5%;
+}
+
+#searchBox label {
+	
+}
+
+#searchBox input::placeholder {
+	color: white;
+}
+
+#searchBox input:focus {
+	box-shadow: none;
+}
+#searchBox input{
+	color: white;
+	font-family: Arial;
+	font-size: 0.6em;
+	border: none;
+}
+
+
+
+/*Biography Tab*/
+
+#biographyTab{
+	display: none;
+	height: 80%;
+	position: absolute;
+	right: 5%;
+}
+
+
+#biographyTab div {
+	height: 70%;
+	border: 3px solid white;
+	border-radius: 15px;
+	
+	position: relative;
+	top: 10%;
+}
+
+
+#biographyTab div img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 20%;
+}
+
+#biographyTab div p {
+	color: white;
+	font-family: 'Open Sans';
+	font-size: 0.4em;
+}
+
+
+/*Skill Tab*/
+
+#skillsTab {
+	display: none;
+	height: 80%;
+	position: absolute;
+	right: 5%;
+	
+}
+
+#skillsTab div {
+	
+	border: 3px solid white;
+	border-radius: 15px;
+	
+	position: relative;
+	top: 10%;
+}
+
+
+#skillsTab div img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 20%;
+}
+
+#skillsTab div p {
+	color: white;
+	font-family: 'Open Sans';
+	font-size: 0.4em;
+}
+
+
+/*Education Tabs*/
+
+#educationTab {
+	display: none;
+	height: 80%;
+	position: absolute;
+	right: 5%;
+}
+
+#educationTab div{
+	height: 70%;
+	border: 3px solid white;
+	border-radius: 15px;
+	
+	position: relative;
+	top: 10%;
+}
+
+#educationTab div img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 20%;
+}
+
+#educationTab div p {
+	color: white;
+	font-family: 'Open Sans';
+	font-size: 0.5em;
+}
+
+#educationTab div address {
+	color: white;
+	text-align: center;
+	font-family: 'Open Sans';
+	font-style: oblique;
+	font-size: 0.4em;
+}
+
+
+/*Tags Tabs*/
+
+#tagsTab {
+	display: none;
+	height: 80%;
+	position: absolute;
+	right: 5%;
+}
+
+#tagsTab div {
+	height: 70%;
+	border: 3px solid white;
+	border-radius: 15px;
+	
+	position: relative;
+	top: 10%;
+}
+
+#tagsTab div img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 20%;
+}
+
+#tagsTab div p {
+	color: white;
+	font-family: 'Open Sans';
+	font-size: 0.4em;
+}
