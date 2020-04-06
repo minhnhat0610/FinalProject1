@@ -26,53 +26,6 @@ $(document).ready(function(){
 		})
 	})
 	
-	$("#navigationDiv nav a:first-of-type").on('click',function(e){
-		e.preventDefault();
-		$("#biographyTab").hide();
-		$("#profileTab").fadeIn(2000);
-		$("#skillsTab").hide();
-		$("#educationTab").hide();
-		$("#tagsTab").hide();
-	})
-	
-	
-	$("#navigationDiv nav a:nth-of-type(2)").on('click',function(e){
-		e.preventDefault();
-		$("#biographyTab").fadeIn();
-		$("#profileTab").hide();
-		$("#skillsTab").hide();
-		$("#educationTab").hide();
-		$("#tagsTab").hide();
-	})
-	
-	$("#navigationDiv nav a:nth-of-type(3)").on('click',function(e){
-		e.preventDefault();
-		$("#biographyTab").hide();
-		$("#profileTab").hide();
-		$("#skillsTab").fadeIn();
-		$("#educationTab").hide();
-		$("#tagsTab").hide();
-	})
-	
-	$("#navigationDiv nav a:nth-of-type(4)").on('click',function(e){
-		e.preventDefault();
-		$("#biographyTab").hide();
-		$("#profileTab").hide();
-		$("#skillsTab").hide();
-		$("#educationTab").fadeIn();
-		$("#tagsTab").hide();
-	})
-	
-	
-	$("#navigationDiv nav a:nth-of-type(5)").on('click',function(e){
-		e.preventDefault();
-		$("#biographyTab").hide();
-		$("#profileTab").hide();
-		$("#skillsTab").hide();
-		$("#educationTab").hide();
-		$("#tagsTab").fadeIn();
-	})
-	
 	
 	
 	

@@ -5,12 +5,8 @@
 <title>Final Project</title>
 	<link href="style.css" rel="stylesheet" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
-	<script src="https://code.jquery.com/jquery-migrate-3.1.0.js"></script>
-	<script src="flowtype.js"></script>
 
-	
-	<script src="Script.js" ></script>
+
 	
 </head>
 
@@ -98,15 +94,15 @@
 		
 		<div class="container-fluid col-9" id="navigationDiv" >
 			<nav class="nav nav-pills justify-content-end mt-3">
-				<a class="nav-link mr-4 mt-2" href="#">Home</a>
+				<a class="nav-link mr-4 mt-2" href="#" id="home">Home</a>
 				
-				<a class="nav-link mr-4 mt-2" href="#">Biography</a>
+				<a class="nav-link mr-4 mt-2" href="#" id="bio">Biography</a>
 				
-				<a class="nav-link  mr-4 mt-2 " href="#">Skills</a>
+				<a class="nav-link  mr-4 mt-2 " href="#" id="skills">Skills</a>
 				
-				<a class="nav-link  mr-4 mt-2 " href="#">Education</a>
+				<a class="nav-link  mr-4 mt-2 " href="#" id="education">Education</a>
 				
-				<a class="nav-link mr-4 mt-2" href="#">Tags</a>
+				<a class="nav-link mr-4 mt-2" href="#" id="tags">Tags</a>
 				
 			</nav>
 		
@@ -175,38 +171,47 @@
 	<div class="container-fluid" id="blur">
 	</div>
 	
-	<script>	
-		$('body').flowtype({
-			minimum : 500,
-			maximum: 1200,
-			minFont: 12,
-			maxFont: 50,
-			fontRatio: 30
+	
+		<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-3.1.0.js"></script>
+		<script src="flowtype.js"></script>
+			
+		<script src="Script.js" ></script>
+		<script src="Script2.js"></script>
+
+		<script>	
+			$('body').flowtype({
+				minimum : 500,
+				maximum: 1200,
+				minFont: 12,
+				maxFont: 50,
+				fontRatio: 30
+				
+				
+			});
+			
+			$("#profileTab").flowtype({
+				fontRatio: 8
+			})
+			
+			$("#biographyTab").flowtype({
+				fontRatio: 9
+			});
+			
+			$("#skillsTab").flowtype({
+				fontRatio :9
+			});
+			
+			$("#educationTab").flowtype({
+				fontRatio :9
+			});
+			
+			$("#tagsTab").flowtype({
+				fontRatio :9
+			});
 			
 			
-		});
-		
-		$("#profileTab").flowtype({
-			fontRatio: 8
-		})
-		
-		$("#biographyTab").flowtype({
-			fontRatio: 9
-		});
-		
-		$("#skillsTab").flowtype({
-			fontRatio :9
-		});
-		
-		$("#educationTab").flowtype({
-			fontRatio :9
-		});
-		
-		$("#tagsTab").flowtype({
-			fontRatio :9
-		});
-		
-		
-	</script>
+		</script>
+	
 </body>
 </html>

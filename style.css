@@ -122,7 +122,8 @@ body{
 /*Profile Tab*/
 
 #profileTab {
-	
+	-webkit-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
 	height: 80%;
 	position: absolute;
 	right: 5%;
@@ -170,7 +171,9 @@ body{
 /*Biography Tab*/
 
 #biographyTab{
-	display: none;
+	-webkit-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+	opacity: 0;
 	height: 80%;
 	position: absolute;
 	right: 5%;
@@ -204,7 +207,9 @@ body{
 /*Skill Tab*/
 
 #skillsTab {
-	display: none;
+	-webkit-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+	opacity: 0;
 	height: 80%;
 	position: absolute;
 	right: 5%;
@@ -238,7 +243,9 @@ body{
 /*Education Tabs*/
 
 #educationTab {
-	display: none;
+	-webkit-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+	opacity: 0;
 	height: 80%;
 	position: absolute;
 	right: 5%;
@@ -278,7 +285,9 @@ body{
 /*Tags Tabs*/
 
 #tagsTab {
-	display: none;
+	-webkit-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+	opacity: 0;
 	height: 80%;
 	position: absolute;
 	right: 5%;
